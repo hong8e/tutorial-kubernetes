@@ -1,9 +1,10 @@
+# kubectl run my-nginx-pod --image ... 을 CLI에서 입력해야 하는 것을 yaml 파일로 대체한 것을 
 apiVersion: v1
 kind: Pod
 metadata:
   name: my-nginx-pod
 
-spec:
+spec: # POD에 대한 스펙
   containers:
   - name: my-nginx-cont
     image: nginx
